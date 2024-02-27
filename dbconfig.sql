@@ -1,10 +1,11 @@
 sudo mysql -u root -p
 
-CREATE DATABASE wpress CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE clickamediawiki CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
-CREATE USER 'cpg'@'192.168.0.101' IDENTIFIED BY 'cpg';
+CREATE USER 'clicka'@'localhost' IDENTIFIED BY 'clickamediawiki';
 
-GRANT ALL ON cpg.* TO 'cpg'@'192.168.10.101';
+GRANT ALL ON clickamediawiki.* TO 'clicka'@'localhost';
 
 FLUSH PRIVILEGES;
 EXIT;
+

@@ -1,5 +1,5 @@
 sudo apt update && sudo apt upgrade -y 
-sudo apt install nginx php php-fpm php-mysql php-xml php-curl php-dom
+sudo apt install nginx php php-fpm php-mysql php-xml php-curl php-dom php-mbstring php-intl
 sudo systemctl enable --now nginx
 sudo systemctl status nginx
 cd /tmp
